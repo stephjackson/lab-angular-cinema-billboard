@@ -1,0 +1,10 @@
+<p>
+  Ironhack Movie Website
+</p>
+
+<div *ngFor="let movie of movieList.movies">
+  <h1>{{ movie.rooms }}</h1>
+  <h6>{{ movie.hours }}</h6>
+  <a [routerLink]="['movie',movie.id]">{{ movie.title }}</a>
+  <img src="{{ movie.poster }}" alt="">
+</div>
