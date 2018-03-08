@@ -2,7 +2,7 @@
   Ironhack Movie Website
 </p>
 
-<div *ngFor="let movie of movieList.movies">
+<div *ngFor="let movie of listOfMovies">
   <h1>{{ movie.rooms }}</h1>
   <h6>{{ movie.hours }}</h6>
   <a [routerLink]="['movie',movie.id]">{{ movie.title }}</a>

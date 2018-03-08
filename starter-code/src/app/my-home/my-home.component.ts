@@ -8,8 +8,9 @@ import { MovieService } from '../services/movie.service'
   providers: [MovieService]
 })
 export class MyHomeComponent implements OnInit {
-
   constructor(private movieList: MovieService) { }
+
+  listOfMovies: Array<Object> = this.movieList.getMovies();
 
   ngOnInit() {
   }
